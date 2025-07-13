@@ -1,4 +1,4 @@
-# Bridge Monitoring Streaming Pipeline with Delta Live Tables
+# Data Pipeline for Structural Health Monitoring
 
 A hands-on demo of a production-grade streaming ETL pipeline using Databricks Delta Live Tables (DLT). We simulate IoT sensors on major bridges, ingest three raw streams (temperature, vibration, tilt), enrich them with static metadata, and compute 10-minute windowed metrics via watermarks, window aggregations, stream-static joins, and stream-stream joins.
 

@@ -2,6 +2,15 @@
 
 A hands-on demo of a production-grade streaming ETL pipeline using Databricks Delta Live Tables (DLT). We simulate IoT sensors on major bridges, ingest three raw streams (temperature, vibration, tilt), enrich them with static metadata, and compute 10-minute windowed metrics via watermarks, window aggregations, stream-static joins, and stream-stream joins.
 
+![PipeLine](Image/I1.png)
+
+![PipeLine](Image/I2.png)
+
+![PipeLine](Image/I3.png)
+
+![PipeLine](Image/I5.png)
+
+
 ---
 
 ## Repository Structure
@@ -28,14 +37,6 @@ A hands-on demo of a production-grade streaming ETL pipeline using Databricks De
     - **max_vibration**  
     - **max_tilt_angle**  
   - Joins them by `(bridge_id, window_start, window_end)` into `03_gold.bridge_metrics`.
-
----
-
-## Prerequisites
-
-- Databricks workspace with Unity Catalog enabled  
-- A cluster running a Databricks Runtime compatible with DLT  
-- Python 3.8+ and PySpark dependencies 
 
 ---
 
@@ -94,10 +95,13 @@ A hands-on demo of a production-grade streaming ETL pipeline using Databricks De
 
 ---
 
-## Next Steps
+## Also Demontstrated
 
 - Extend to more sensor metrics (e.g. tilt rate, strain gauges)  
 - Add alerts with DLT expectations or Databricks SQL  
 - Integrate with a real-time dashboard (e.g. Databricks SQL or Power BI)  
 
-Happy streaming! 🚧🌉🚀  # Bridge-Monitoring-Streaming-Pipeline-with-Delta-Live-Tables
+
+
+
+
